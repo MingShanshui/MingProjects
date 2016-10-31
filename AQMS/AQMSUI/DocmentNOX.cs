@@ -16,5 +16,15 @@ namespace AQMSUI
         {
             InitializeComponent();
         }
+
+        private void label_NOX_Unit_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_NOX_Unit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

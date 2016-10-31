@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace AQMSUI
 {
-    public partial class DocmentSO2 : UserControl
+    public partial class DocmentPM10 : UserControl
     {
-        public DocmentSO2()
+        public DocmentPM10()
         {
             InitializeComponent();
-        }
-
-        private void label_SO2_Unit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_SO2_Unit_MouseEnter(object sender, EventArgs e)
-        {
-
         }
     }
 }

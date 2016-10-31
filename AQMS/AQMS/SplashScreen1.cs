@@ -122,7 +122,7 @@ namespace AQMS
                 BinaryFormatter bf = new BinaryFormatter();
                 if (fs.Length > 0)
                 {
-                    AirDevice.m_Device = bf.Deserialize(fs) as List<Device>;
+                    SysGlobal.m_Device = bf.Deserialize(fs) as List<Device>;
                 }
             }
             return true;

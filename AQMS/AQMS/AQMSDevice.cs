@@ -82,11 +82,5 @@ namespace AQMS
         /// 8(多点检查), 9(精密度检查), 10(示值误差检查), 11(维护)
         /// </summary>
         public int dataStatues { get; set; }
-
-    }
-
-    public class AirDevice
-    {
-        public static List<Device> m_Device = new List<Device>();
     }
 }

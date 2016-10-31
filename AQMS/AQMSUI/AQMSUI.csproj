@@ -52,17 +52,77 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocmentCO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentCO.Designer.cs">
+      <DependentUpon>DocmentCO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocmentCO2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentCO2.Designer.cs">
+      <DependentUpon>DocmentCO2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocmentFive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentFive.Designer.cs">
+      <DependentUpon>DocmentFive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocmentH2S.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentH2S.Designer.cs">
+      <DependentUpon>DocmentH2S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocmentNH3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentNH3.Designer.cs">
+      <DependentUpon>DocmentNH3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocmentNJD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentNJD.Designer.cs">
+      <DependentUpon>DocmentNJD.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocmentNOX.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DocmentNOX.Designer.cs">
       <DependentUpon>DocmentNOX.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocmentO3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentO3.Designer.cs">
+      <DependentUpon>DocmentO3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocmentPM10.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentPM10.Designer.cs">
+      <DependentUpon>DocmentPM10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocmentPM25.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentPM25.Designer.cs">
+      <DependentUpon>DocmentPM25.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocmentSO2.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DocmentSO2.Designer.cs">
       <DependentUpon>DocmentSO2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocmentTSP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocmentTSP.Designer.cs">
+      <DependentUpon>DocmentTSP.cs</DependentUpon>
     </Compile>
     <Compile Include="HomeChart.cs">
       <SubType>UserControl</SubType>
@@ -79,6 +139,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DocmentH2S.resx">
+      <DependentUpon>DocmentH2S.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocmentNOX.resx">
       <DependentUpon>DocmentNOX.cs</DependentUpon>
     </EmbeddedResource>

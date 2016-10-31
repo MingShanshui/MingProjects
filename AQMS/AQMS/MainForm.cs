@@ -29,36 +29,36 @@ namespace AQMS
             StackGroup groupPM  = new StackGroup();
             StackGroup groupAir = new StackGroup();
             groupGas.Length.UnitType = LengthUnitType.Star;
-            groupGas.Length.UnitValue = 4;
+            groupGas.Length.UnitValue = 3;
             groupPM.Length.UnitType = LengthUnitType.Star;
             groupPM.Length.UnitValue = 3;
             groupAir.Length.UnitType = LengthUnitType.Star;
-            groupAir.Length.UnitValue = 4;
+            groupAir.Length.UnitValue = 3;
             ucDocmentManager1.AddStackGroup(groupGas);
             ucDocmentManager1.AddStackGroup(groupPM);
             ucDocmentManager1.AddStackGroup(groupAir);
 
             List<Document> mDocments = new List<Document>();
-            if (AirDevice.m_Device != null)
+            if (SysGlobal.m_Device != null)
             {
-                for (int i = 0; i < AirDevice.m_Device.Count - 1; i++)
+                for (int i = 0; i < SysGlobal.m_Device.Count - 1; i++)
                 {
                     Document devDocment = new Document();
-                    devDocment.Caption = AirDevice.m_Device.ElementAt(i).devChName;
+                    devDocment.Caption = SysGlobal.m_Device.ElementAt(i).devChName;
                     devDocment.Properties.AllowClose = DevExpress.Utils.DefaultBoolean.False;
                     devDocment.Properties.AllowDock = DevExpress.Utils.DefaultBoolean.False;
                     devDocment.Properties.AllowFloat = DevExpress.Utils.DefaultBoolean.False;
                     devDocment.Properties.AllowActivate = DevExpress.Utils.DefaultBoolean.False;
                     ucDocmentManager1.AddDocument(devDocment);
-                    if (AirDevice.m_Device[i].devType == 1)
+                    if (SysGlobal.m_Device[i].devType == 1)
                     {
                         groupGas.Items.Add(devDocment);
                     }
-                    else if (AirDevice.m_Device[i].devType == 2)
+                    else if (SysGlobal.m_Device[i].devType == 2)
                     {
                         groupPM.Items.Add(devDocment);
                     }
-                    else if (AirDevice.m_Device[i].devType == 3)
+                    else if (SysGlobal.m_Device[i].devType == 3)
                     {
                         groupAir.Items.Add(devDocment);
                     }
@@ -204,100 +204,115 @@ namespace AQMS
         #region 系统菜单响应
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         { // 用户登录
-
+            Login LoginForm = new Login();
+            LoginForm.ShowDialog();
         }
 
         private void 系统设置ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
+        { // 系统设置
+            SysSetting SysSetForm = new SysSetting();
+            SysSetForm.ShowDialog();
         }
 
         private void 系统高级设置ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 系统高级设置
+            MoreSetting MoreSetForm = new MoreSetting();
+            MoreSetForm.ShowDialog();
         }
 
-        private void 监测因子设置ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        private void 监测设备设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        { // 监测设备设置
+            DeviceSetting DevSetForm = new DeviceSetting();
+            DevSetForm.ShowDialog();
         }
 
         private void 联网传输配置ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 联网传输配置
+            NetSetting NetSetForm = new NetSetting();
+            NetSetForm.ShowDialog();
         }
 
         private void 历史数据查询ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 历史数据查询
+            DataReport DataReprotForm = new DataReport();
+            DataReprotForm.ShowDialog();
         }
 
         private void 状态信息查询ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        { // 状态信息查询
+            DeviceInfo DevInfoForm = new DeviceInfo();
+            DevInfoForm.ShowDialog();
+        }
 
+        private void aQI实时报表查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        { // AQI实时报表查询
+            AQIReport AQIReportForm = new AQIReport();
+            AQIReportForm.ShowDialog();
         }
 
         private void aQI日报表查询ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void aQI日报表查询ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
+        { // AQI日报表查询
+            AQIReport AQIReportForm = new AQIReport();
+            AQIReportForm.ShowDialog();
         }
 
         private void 现场质控任务ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 现场质控任务
+            LocalControl LocalControlForm = new LocalControl();
+            LocalControlForm.ShowDialog();
         }
 
         private void 定时质控任务ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 定时质控任务
+            TimerControl TimerControlForm = new TimerControl();
+            TimerControlForm.ShowDialog();
         }
 
         private void 质控预标识ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 质控预标识
+            ControlStatues ControlStatuesForm = new ControlStatues();
+            ControlStatuesForm.ShowDialog();
         }
 
         private void 质控任务查询ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 质控任务查询
+            ControlReport ControlReportForm = new ControlReport();
+            ControlReportForm.ShowDialog();
         }
 
         private void 串口调试ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        { // 串口调试
 
         }
 
         private void 串口侦测ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        { // 串口侦测
 
         }
 
         private void 检查更新ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 检查更新
+            AppUpdate UpdateForm = new AppUpdate();
+            UpdateForm.ShowDialog();
         }
 
         private void 使用手册ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 使用手册
+            string helpPath = Application.StartupPath.ToString() + "\\help\\宇星科技空气质量自动在线监测系统使用手册.doc";
+            System.Diagnostics.Process.Start(helpPath);
         }
 
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        { // 关于
+            AboutForm about = new AboutForm();
+            about.ShowDialog();
         }
         #endregion
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime nowDate = System.DateTime.Now;
-            this.barStaticItem3.Caption = nowDate.ToString("yyyy-MM-dd HH:mm:ss");
-            
+            this.barStaticItem3.Caption = nowDate.ToString("yyyy-MM-dd HH:mm:ss");            
         }
     }
 }

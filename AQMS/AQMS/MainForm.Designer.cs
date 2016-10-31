@@ -61,8 +61,8 @@ namespace AQMS
             this.历史数据查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.状态信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aQI实时报表查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aQI日报表查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aQI日报表查询ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.质控任务ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.现场质控任务ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.定时质控任务ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -337,8 +337,8 @@ namespace AQMS
             // 
             this.监测因子设置ToolStripMenuItem.Name = "监测因子设置ToolStripMenuItem";
             this.监测因子设置ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.监测因子设置ToolStripMenuItem.Text = "监测因子设置";
-            this.监测因子设置ToolStripMenuItem.Click += new System.EventHandler(this.监测因子设置ToolStripMenuItem_Click);
+            this.监测因子设置ToolStripMenuItem.Text = "监测设备设置";
+            this.监测因子设置ToolStripMenuItem.Click += new System.EventHandler(this.监测设备设置ToolStripMenuItem_Click);
             // 
             // 联网传输配置ToolStripMenuItem
             // 
@@ -379,26 +379,26 @@ namespace AQMS
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aQI日报表查询ToolStripMenuItem,
-            this.aQI日报表查询ToolStripMenuItem1});
+            this.aQI实时报表查询ToolStripMenuItem,
+            this.aQI日报表查询ToolStripMenuItem});
             this.帮助ToolStripMenuItem.Image = global::AQMS.Properties.Resources.find_1;
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
             this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.帮助ToolStripMenuItem.Text = "AQI查询";
             // 
+            // aQI实时报表查询ToolStripMenuItem
+            // 
+            this.aQI实时报表查询ToolStripMenuItem.Name = "aQI实时报表查询ToolStripMenuItem";
+            this.aQI实时报表查询ToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.aQI实时报表查询ToolStripMenuItem.Text = "AQI实时报表查询";
+            this.aQI实时报表查询ToolStripMenuItem.Click += new System.EventHandler(this.aQI实时报表查询ToolStripMenuItem_Click);
+            // 
             // aQI日报表查询ToolStripMenuItem
             // 
             this.aQI日报表查询ToolStripMenuItem.Name = "aQI日报表查询ToolStripMenuItem";
             this.aQI日报表查询ToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
-            this.aQI日报表查询ToolStripMenuItem.Text = "AQI实时报表查询";
+            this.aQI日报表查询ToolStripMenuItem.Text = "AQI日报表查询";
             this.aQI日报表查询ToolStripMenuItem.Click += new System.EventHandler(this.aQI日报表查询ToolStripMenuItem_Click);
-            // 
-            // aQI日报表查询ToolStripMenuItem1
-            // 
-            this.aQI日报表查询ToolStripMenuItem1.Name = "aQI日报表查询ToolStripMenuItem1";
-            this.aQI日报表查询ToolStripMenuItem1.Size = new System.Drawing.Size(201, 26);
-            this.aQI日报表查询ToolStripMenuItem1.Text = "AQI日报表查询";
-            this.aQI日报表查询ToolStripMenuItem1.Click += new System.EventHandler(this.aQI日报表查询ToolStripMenuItem1_Click);
             // 
             // 质控任务ToolStripMenuItem
             // 
@@ -610,8 +610,8 @@ namespace AQMS
         private ToolStripMenuItem 联网传输配置ToolStripMenuItem;
         private ToolStripMenuItem 历史数据查询ToolStripMenuItem;
         private ToolStripMenuItem 状态信息查询ToolStripMenuItem;
+        private ToolStripMenuItem aQI实时报表查询ToolStripMenuItem;
         private ToolStripMenuItem aQI日报表查询ToolStripMenuItem;
-        private ToolStripMenuItem aQI日报表查询ToolStripMenuItem1;
         private ToolStripMenuItem 现场质控任务ToolStripMenuItem;
         private ToolStripMenuItem 定时质控任务ToolStripMenuItem;
         private ToolStripMenuItem 质控预标识ToolStripMenuItem;

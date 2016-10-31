@@ -58,24 +58,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AppUpdate.Designer.cs">
       <DependentUpon>AppUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="AQIReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AQIReport.Designer.cs">
+      <DependentUpon>AQIReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="AQMSDevice.cs" />
+    <Compile Include="ControlReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlReport.Designer.cs">
+      <DependentUpon>ControlReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlStatues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlStatues.Designer.cs">
+      <DependentUpon>ControlStatues.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataReport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataReport.Designer.cs">
       <DependentUpon>DataReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeviceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceInfo.Designer.cs">
+      <DependentUpon>DeviceInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeviceSetting.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeviceSetting.Designer.cs">
       <DependentUpon>DeviceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalControl.Designer.cs">
+      <DependentUpon>LocalControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -117,11 +153,18 @@
     </Compile>
     <Compile Include="SqlHelper.cs" />
     <Compile Include="SQLOperation.cs" />
+    <Compile Include="SysGlobal.cs" />
     <Compile Include="SysSetting.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SysSetting.Designer.cs">
       <DependentUpon>SysSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerControl.Designer.cs">
+      <DependentUpon>TimerControl.cs</DependentUpon>
     </Compile>
     <Compile Include="UCDocmentManager.cs">
       <SubType>UserControl</SubType>
@@ -129,11 +172,17 @@
     <Compile Include="UCDocmentManager.Designer.cs">
       <DependentUpon>UCDocmentManager.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppUpdate.resx">
       <DependentUpon>AppUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataReport.resx">
       <DependentUpon>DataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceInfo.resx">
+      <DependentUpon>DeviceInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeviceSetting.resx">
       <DependentUpon>DeviceSetting.cs</DependentUpon>
@@ -215,9 +264,6 @@
     <None Include="Resources\Close1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DeviceConfig.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="Resources\control_3.png" />
     <None Include="Resources\debug_1.png" />
     <None Include="Resources\control_1.png" />
