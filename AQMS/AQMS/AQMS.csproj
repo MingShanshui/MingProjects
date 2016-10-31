@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4134D83-38D8-449F-A5C4-3FEC5C279CDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AQMS</RootNamespace>
+    <AssemblyName>AQMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.Printing.v16.1.Core" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppUpdate.Designer.cs">
+      <DependentUpon>AppUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AQMSDevice.cs" />
+    <Compile Include="DataReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataReport.Designer.cs">
+      <DependentUpon>DataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceSetting.Designer.cs">
+      <DependentUpon>DeviceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogToFile.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreSetting.Designer.cs">
+      <DependentUpon>MoreSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetSetting.Designer.cs">
+      <DependentUpon>NetSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="SQLOperation.cs" />
+    <Compile Include="SysSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysSetting.Designer.cs">
+      <DependentUpon>SysSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDocmentManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDocmentManager.Designer.cs">
+      <DependentUpon>UCDocmentManager.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AppUpdate.resx">
+      <DependentUpon>AppUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataReport.resx">
+      <DependentUpon>DataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceSetting.resx">
+      <DependentUpon>DeviceSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreSetting.resx">
+      <DependentUpon>MoreSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetSetting.resx">
+      <DependentUpon>NetSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysSetting.resx">
+      <DependentUpon>SysSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDocmentManager.resx">
+      <DependentUpon>UCDocmentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AQMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DeviceConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\control_3.png" />
+    <None Include="Resources\debug_1.png" />
+    <None Include="Resources\control_1.png" />
+    <None Include="Resources\update_1.png" />
+    <None Include="Resources\find_2.png" />
+    <None Include="Resources\find_1.png" />
+    <None Include="Resources\update_2.png" />
+    <None Include="Resources\AQI_2.jpg" />
+    <None Include="Resources\help_2.png" />
+    <None Include="Resources\help_1.png" />
+    <None Include="Resources\history_1.png" />
+    <None Include="Resources\setting_2.png" />
+    <None Include="Resources\setting_1.png" />
+    <None Include="Resources\user_2.png" />
+    <None Include="Resources\user_1.png" />
+    <None Include="Resources\AQMS_1.png" />
+    <None Include="Resources\min_withe.png" />
+    <None Include="Resources\min_red.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\close_2.png" />
+    <None Include="Resources\close_1.png" />
+    <None Include="Resources\AirQuality_1.jpg" />
+    <None Include="Resources\AirQuality_3.png" />
+    <None Include="Resources\AirQuality.png" />
+    <None Include="Resources\infore1.png" />
+    <None Include="Resources\infore2.jpg" />
+    <None Include="Resources\infore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AQMSUI\AQMSUI.csproj">
+      <Project>{57ccf95c-bd5c-4bf1-8e32-84ea38e183de}</Project>
+      <Name>AQMSUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
